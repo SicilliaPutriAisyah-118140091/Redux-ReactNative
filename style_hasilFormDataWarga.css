@@ -1,0 +1,38 @@
+
+h3{
+	font-weight: bold;
+	padding: 0.25em 0 0.25em 0;
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 2px solid #FFBF00;
+	border-bottom: 2px solid #FFBF00;
+	color: #6495ED;
+}
+
+table{
+	border: solid 1pt black;
+	border-collapse: collapse;
+	font-size: 0.8em;
+	font-family: Arial, sans-serif;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+td{
+	border: solid 1pt black;
+	height: 20px;
+}
+
+tr:hover{
+	background-color: #DFFF00;
+}
+
+th{
+	height: 50px;
+}
+
+table, th, td{
+	border: 3px solid #6495ED;
+}

@@ -1,0 +1,189 @@
+
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	font-family: 'Montserrat', sans-serif;
+ }
+
+ body{
+ 	background: white;
+ 	padding: 0 10px;
+ }
+
+ .wrapper{
+ 	max-width: 500px;
+ 	width: 100%;
+ 	background: #6F8FAF;
+ 	margin: 20px auto;
+ 	padding: 30px;
+ 	box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+ }
+
+ .wrapper .title{
+ 	font-size: 24px;
+ 	font-weight: 700;
+ 	margin-bottom: 25px;
+ 	font-family: Time;
+ 	color: #fec107;
+ 	text-transform: uppercase;
+ 	text-align: center;
+ }
+
+ .wrapper .form{
+ 	width: 100%
+ }
+
+ .wrapper .form .input_field{
+ 	margin-bottom: 15px;
+ 	display: flex;
+ 	align-items: center;
+ }
+
+ .wrapper .form .input_field label{
+ 	width: 200px;
+ 	color: #fec107;
+ 	margin-right: 10px;
+ 	font-size: 17px;
+ 	font-family: Time;
+ }
+
+ .wrapper .form .input_field .input,
+ .wrapper .form .input_field .textarea{
+ 	width: 100%;
+ 	outline: none;
+ 	border: 1px solid yellow;
+ 	font-family: Time;
+ 	font-size: 15px;
+ 	padding: 8px 10px;
+ 	border-radius: 3px;
+ 	transition: all 0.3s ease;
+ }
+
+ .wrapper .form .input_field .textarea{
+ 	resize: none;
+ 	height: 125px;
+ }
+
+ .wrapper .form .input_field .custom_select{
+ 	position: relative;
+ 	width: 100%;
+ 	height: 37px;
+ }
+
+ .wrapper .form .input_field .custom_select select{
+ 	-webkit-appearance: none;
+ 	appearance: none;
+ 	border: 1px solid yellow;
+ 	width: 100%;
+ 	height: 100%;
+ 	padding: 8px 10px;
+ 	border-radius: 3px;
+ 	outline: none;
+ }
+
+ .wrapper .form .input_field .custom_select:before{
+ 	content: "";
+ 	position: absolute;
+ 	top: 12px;
+ 	right: 10px;
+ 	border: 8px solid;
+ 	border-color: #6495ED transparent transparent transparent;
+ 	pointer-events: none;
+ }
+
+ .wrapper .form .input_field .input:focus,
+ .wrapper .form .input_field .textarea:focus,
+ .wrapper .form .input_field .date:focus,
+ .wrapper .form .input_field select:focus{
+ 	border: 1px solid #FF7F50 ;
+ }
+
+ .wrapper .form .input_field .date{
+ 	position: relative;
+ 	width: 100%;
+ 	height: 37px;
+ }
+
+ .wrapper .form .input_field .input,
+ .wrapper .form .input_field .date{
+ 	width: 100%;
+ 	outline: none;
+ 	border: 1px solid yellow;
+ 	font-size: 15px;
+ 	padding: 8px 10px;
+ 	border-radius: 3px;
+ 	transition: all 0.3s ease;
+ }
+
+.wrapper .form .input_field .input,
+.wrapper .form .input_field .option{
+	font-family: Time;
+	font-size: 15px;
+}
+
+.wrapper .form .input_field .btn{
+	width: 100%;
+	padding: 8px 10px;
+	font-size: 15px;
+	border: 0;
+	background: #fec107;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	outline: none;
+}
+
+
+
+
+
+
+ .wrapper .form .input_field p{
+ 	font-size: 14px;
+ 	color: yellow;
+ }
+
+ .wrapper .form .input_field .check{
+ 	width: 15px;
+ 	height: 15px;
+ 	position: relative;
+ 	display: block;
+ 	cursor: pointer;
+ }
+
+ .wrapper .form .input_field .check input[type="checkbox"]{
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	opacity: 0;
+ }
+
+ .wrapper .form .input_field .check .checkmark{
+ 	width: 15px;
+ 	height: 15px;
+ 	border: 1px solid blue;
+ 	display: block;
+ 	position: relative;
+ 	background: red; 
+ }
+
+ .wrapper .form .input_field .check .checkmark:before{
+ 	content: "";
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 5px;
+ 	height: 2px;
+ 	border: 2px solid;
+ 	border-color: green green green green;
+ 	transform: rotate(-45deg);
+ }
+
+ .wrapper .form .input_field .check input[type="checkbox"]:checked ~ .checkmark{
+ 	background:pink; 
+ }
+
+.wrapper .form .input_field .check input[type="checkbox"]:checked ~ .checkmark:before{
+	display: block;
+}
